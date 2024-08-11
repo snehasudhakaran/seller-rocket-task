@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Gainhub</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/GainHubIcon.ico" />
+
+    <!-- icon CDN -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.8.55/css/materialdesignicons.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+
+
+</head>
+
+<body>
+
+    <!-- header Start-->
+    
+    <div class="px-6 lg:px-[92px] flex justify-end text-white pb-2 pt-3 border-b lg:border-b-0 login">
+        <button>Log in</button>
+    </div>
+
+    <header class="fixed inset-x-0 top-[50px] z-50 header py-3 lg:border-b-0 border-b header-color ">
+        <nav class="flex items-center justify-between   px-6 lg:px-[92px] " aria-label="Global">
+            <div class="flex ">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Your Company</span>
+                    <a href="./index.html">
+                        <div class=" mb-0 w-auto">
+                            <img src="./assets/images/logo.png" width="100px" height="34px">
+                        </div>
+                    </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button"
+                    class="-m-2.5 menu-button inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hidden lg:flex lg:gap-x-12 align-items-center">
+                <div class="lg:flex lg:gap-x-12 align-items-center desktop-menuItems">
+
+                    <div class="relative group">
+                        <button id="dropdownDefaultButton"
+                            class="text-[16px] text-white text-center inline-flex items-center link"
+                            type="button">Product
+                    
+                            <!-- Down Arrow SVG (default state) -->
+                            <svg class="w-2.5 h-2.5 ms-3 group-hover:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                    
+                            <!-- Up Arrow SVG (hover state) -->
+                            <svg class="w-2.5 h-2.5 ms-3 hidden group-hover:inline-block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 5 4-4 4 4" />
+                            </svg>
+                        </button>
+                    
+                       
+                    </div>
+
+                    <a href="./" class="text-[16px] text-white link">Pricing</a>
+                    <a href="./" class="text-[16px] text-white link">Ecommerce</a>
+
+                    <div class="relative group">
+                        <button id="dropdownDefaultButton"
+                            class="text-[16px] text-white text-center inline-flex items-center link"
+                            type="button">Resources
+                    
+                            <!-- Down Arrow SVG (default state) -->
+                            <svg class="w-2.5 h-2.5 ms-3 group-hover:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                    
+                            <!-- Up Arrow SVG (hover state) -->
+                            <svg class="w-2.5 h-2.5 ms-3 hidden group-hover:inline-block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 5 4-4 4 4" />
+                            </svg>
+                        </button>
+                    
+                       
+                    </div>
+
+                    <div class="relative group">
+                        <button id="dropdownDefaultButton"
+                            class="text-[16px] text-white text-center inline-flex items-center link"
+                            type="button">Partners
+                    
+                            <!-- Down Arrow SVG (default state) -->
+                            <svg class="w-2.5 h-2.5 ms-3 group-hover:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                    
+                            <!-- Up Arrow SVG (hover state) -->
+                            <svg class="w-2.5 h-2.5 ms-3 hidden group-hover:inline-block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 5 4-4 4 4" />
+                            </svg>
+                        </button>
+                    
+                        <!-- Dropdown menu -->
+                        <div id="dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 border absolute mt-2 group-hover:block w-[200px]">
+                            <ul class="py-2 text-sm text-black-700" aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="./" class="block px-4 py-2 text-left hover:underline text-gray-500">Let's Talk</a>
+                                </li>
+                                <li>
+                                    <a href="./" class="block px-4 py-2 text-left hover:underline">Partner Programs</a>
+                                </li>
+                                <li>
+                                    <a href="./" class="block px-4 py-2 text-left hover:underline">Find a trusted agency</a>
+                                </li>
+                                <li>
+                                    <a href="./" class="block px-4 py-2 text-left hover:underline">Partner portal
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="hidden lg:flex">
+                <div class="navbar-buttons">
+                    <button class="py-2 px-4 bg-[#64ED80] rounded-[7px] font-normal hover:bg-[#27e74e]">Get started free</button>
+                    <a href="./contact.html">
+                        <button class="py-2 px-4 bg-[#ffffff] rounded-[7px] font-normal"> Contact scales</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden sm:hidden mobile-Nav " role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50 "></div>
+            <div
+                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white  sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between px-6 pt-4">
+                    <span class="sr-only">Your Company</span>
+                    <a href="./index.html">
+                        <img src="./assets/images/black-logo.png" width="100px" height="34px">
+                    </a>
+                    <button type="button" class="rounded-md text-gray-700 menu-close">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="rgb(8, 15, 26)"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/10">
+                        <div class="space-y-2 py-6 px-4">
+
+                            <div class="relative group py-[10px]">
+                                <button id="dropdownDefaultButton"
+                                    class="text-[16px] text-[#080f1a] text-center inline-flex items-center link text-[24px]"
+                                    type="button">Product
+                            
+                                    <!-- Down Arrow SVG (default state) -->
+                                    <svg class="w-2.5 h-2.5 ms-3 group-hover:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                            
+                                    <!-- Up Arrow SVG (hover state) -->
+                                    <svg class="w-2.5 h-2.5 ms-3 hidden group-hover:inline-block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 5 4-4 4 4" />
+                                    </svg>
+                                </button>
+                            
+                                
+                            </div>
+
+                            <div class="py-[10px] ">
+                                <a href="./" class="text-[16px] text-[#080f1a] link text-[24px]">Pricing</a>
+                            </div>
+
+                            <div class="py-[10px] ">
+                                <a href="./" class="text-[16px] text-[#080f1a] link text-[24px]">Ecommerce</a>
+                            </div>
+        
+                            <div class="relative group py-[10px]">
+                                <button id="dropdownDefaultButton"
+                                    class="text-[16px] text-[#080f1a] text-center inline-flex items-center link text-[24px]"
+                                    type="button">Partners
+                            
+                                    <!-- Down Arrow SVG (default state) -->
+                                    <svg class="w-2.5 h-2.5 ms-3 group-hover:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                            
+                                    <!-- Up Arrow SVG (hover state) -->
+                                    <svg class="w-2.5 h-2.5 ms-3 hidden group-hover:inline-block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 5 4-4 4 4" />
+                                    </svg>
+                                </button>
+                            
+                                
+                            </div>
+
+                            <div class="relative group py-[10px]">
+                                <button id="dropdownDefaultButton"
+                                    class="text-[16px] text-[#080f1a] text-center inline-flex items-center link text-[24px]"
+                                    type="button">Contact
+                            
+                                    <!-- Down Arrow SVG (default state) -->
+                                    <svg class="w-2.5 h-2.5 ms-3 group-hover:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                            
+                                    <!-- Up Arrow SVG (hover state) -->
+                                    <svg class="w-2.5 h-2.5 ms-3 hidden group-hover:inline-block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 5 4-4 4 4" />
+                                    </svg>
+                                </button>
+                            
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 bg-[#001433] py-3 flex justify-center w-100">
+                        <div class="navbar-buttons">
+                            <button class="py-2 px-4 bg-[#64ED80] rounded-[7px] font-normal">Get started free</button>
+                            <button class="py-2 px-4 bg-[#ffffff] rounded-[7px] font-normal"> Contact scales</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header End -->
+
+    <!-- content -->
+    <div class="flex flex-col lg:flex-row gap-y-[30px] justify-between py-4 mt-[100px] px-6 lg:px-[92px]"> 
+        <div class="flex flex-col w-[100%] lg:w-[50%] text-white"> 
+            <section class="customer-service-section  lg:px-0">
+                <h2 class="text-[40px] font-semibold mb-4">See how Tidio improves your customer service:</h2>
+            
+                <ul class="list-none pl-0 ">
+                    <li class="flex items-center mb-2 gap-2">
+                        <svg class="ml-2 w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <p class="text-lg text-[16px]">30-minute commitment-free call</p>
+                        
+                    </li>
+            
+                    <li class="flex items-center mb-2 gap-2">
+                        <svg class="ml-2 w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <p class="text-lg text-[16px] ">Live product demo so you can see how AI customer service helps your business grow</p>
+                        
+                    </li>
+            
+                    <li class="flex items-center mb-5 gap-2">
+                        <svg class="ml-2 w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <p class="text-lg text-[16px]">Discover how we can customize Tidio for your industry and business needs</p>
+                        
+                    </li>
+                </ul>
+            </section>
+            
+            <section class="testimonial-section py-6 px-4 lg:px-0 bg-[#001B47] rounded-4">
+                <div class="quote-container mb-6">
+                    <img src="./assets/images/quotes.png"/>
+                    <p class="text-l[18px] font-medium text-white mt-2 font-normal">
+                        We knew Tidio had a variety of features to choose from, but did not know how powerful and effective they could be. Tidio has helped us with closing sales, building trust, and quantifying the impact of customer service.
+                    </p>
+                </div>
+            
+                <div class="profile-container flex items-center">
+                    <img src="./assets/images/daniel-profile.png" alt="Profile Picture" class="w-[36px] h-[35px] rounded-full mr-4" >
+                    <div>
+                        <p class=" text-white font-semibold text-[14px]">Evelin Lopez</p>
+                        <p class=" text-[12px] text-[#8796AF]">Marketing Manager at eye-oo</p>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+      
+        <div class="w-[100%] lg:w-[40%] p-[32px] bg-[#F5F7F9] rounded-4">
+            <h1 class="text-[40px] lettalk mb-4">Let’s talk</h1>
+            <form class="space-y-4">
+                <div class="flex space-x-4 mb-4">
+                  <input type="text" placeholder="First Name*" class="w-1/2 p-2 border border-gray-300 rounded" />
+                  <input type="text" placeholder="Last Name*" class="w-1/2 p-2 border border-gray-300 rounded" />
+                </div>
+              
+                <div class=" mb-4">
+                  <input type="email" placeholder="Work Email*" class="w-full p-2 border border-gray-300 rounded" />
+                </div>
+              
+                <div class="mb-4">
+                  <input type="text" placeholder="Website*" class="w-full p-2 border border-gray-300 rounded" />
+                </div>
+              
+                <div class="relative w-full">
+                    <!-- Dropdown Button -->
+                    <button id="dropdownButton" 
+                            class="w-full p-2 border border-gray-300 rounded bg-white text-left flex items-center justify-between">
+                        <span id="dropdownButtonText " class="text-[14px] text-[#647491]">Monthly website traffic*</span>
+                        <svg class="inline-block w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    
+                    <!-- Dropdown Menu -->
+                    <div id="dropdownMenu" 
+                         class="absolute mt-1 w-full bg-white border border-gray-300 rounded shadow-lg hidden">
+                        <ul class="py-2">
+                            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer" data-value="Up to $500">More than 10000</li>
+                            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer" data-value="$500 - $1000">Less than 10000</li>
+                            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer" data-value="$1000 - $5000">I don't know</li>
+                            
+                        </ul>
+                    </div>
+                </div>                
+              
+                <!-- Terms and Conditions -->
+                <p class="text-sm termspolicy text-[#647491]">
+                  By submitting your details you hereby agree to our 
+                  <a href="#" class="text-[#647491] underline">Terms & Conditions</a> and 
+                  <a href="#" class="text-[#647491] underline">Privacy Policy</a>. 
+                  You may always opt-out from our mailing lists in accordance with the Privacy Policy.
+                </p>
+              
+                <!-- Submit Button -->
+                <div class="flex justify-content-center align-items-center">
+                  <button type="submit" class=" py-[10px] px-[25px] text-black rounded flex align-items-center gap-[10px] submit">
+                    <p>Submit</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                      </svg>
+                      
+                      
+                  </button>
+                </div>
+              </form>
+              
+              
+        </div>
+        
+      </div>
+    <!-- content -->
+
+  <!-- ====== stats start-->
+  <div class="  md:max-w-full py-[50px] md:px-24 px-6 lg:px-[92px] stats reference ">
+    <p class="text-[14px] text-[#647491] text-center mb-4">Trusted by 300,000+ businesses:</p>
+    <div class="grid lg:grid-cols-4 col-gap-5 ref-img  md:grid-cols-2 grid-cols-1 px-[50px] gap-y-10">
+      <div class="d-flex justify-content-center align-items-center ">
+        <img src="./assets/images/glovo.png" width="150px" />
+      </div>
+      <div class="d-flex justify-content-center align-items-center ">
+        <img src="./assets/images/praktiker.png" width="150px" />
+      </div>
+      <div class="d-flex justify-content-center align-items-center ">
+        <img src="./assets/images/procosmet.png" width="150px" />
+      </div>
+      <div class="d-flex justify-content-center align-items-center ">
+        <img src="./assets/images/jaguvar.png" width="150px" />
+      </div>
+
+    </div>
+    
+  </div>
+  <!-- ====== stats Ends-->
+
+    <!-- Footer Start -->
+    <div class="footer  pt-3 px-6 lg:px-[92px] mt-[80px]">
+        <div class="footer-contact mb-[32px]">
+            <div class="horizontal-line mt-1 mb-3"></div>
+            <div class="flex flex-col lg:flex-row gap-x-4 gap-y-2">
+                <p class="text-[#8796af] text-[14px] font-normal m-0">Tidio 2024. All rights reserved.</p>
+                <div class=" flex flex-col lg:flex-row gap-x-4 gap-y-2">
+                    <div>
+                        <a href="./" class="block hover:underline text-[14px] text-white">Privacy Policy</a>
+                    </div>
+                    <div>
+                        <a href="./" class="block hover:underline text-[14px] text-white">Terms and Conditions</a>
+                    </div>
+                    <div>
+                        <a href="./" class="block  hover:underline text-[14px] text-white">Do not sell and share my data</a>
+                    </div>
+                    <div>
+                        <a href="./" class="block hover:underline text-[14px] text-white">support@tidio.net</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-[16px] mt-[32px]">
+                <img src="./assets/images/linkedin.png" width="20px" height="20px"/>
+                <img src="./assets/images/youtube.png" width="20px" height="20px"/>
+                <img src="./assets/images/x-logo.png" width="20px" height="20px"/>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <script src="./assets/js/jQuery.js"></script>
+    
+    <script src="./assets/js/contact.js"></script>
+
+    <script>
+        $(document).ready(
+            $(".menu-button").click(() => {
+              $(".mobile-Nav").show();
+            }),
+            $(".mobile-Nav").hide(),
+            $(".menu-close").click(() => {
+              $(".mobile-Nav").hide();
+            })
+          );
+      
+    </script>
+
+</body>
+
+</html>
